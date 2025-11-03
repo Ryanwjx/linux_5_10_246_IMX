@@ -6,4 +6,17 @@
 
 #include "imx6ull.dtsi"
 
+/ {
+    model = "Freescale i.MX6 ULL 14x14 EVK Board";
+    compatible = "fsl,imx6ull-14x14-evk", "fsl,imx6ull";
+
+    chosen {
+        stdout-path = &uart1;   //标准输出接口，用于 earlycon / printk / 控制台
+    };
+
+};  
+
+&uart1 {
+    status = "okay";
+};
 
