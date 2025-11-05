@@ -873,6 +873,6 @@ static void __exit goodix_ts_exit(void)
 
 module_init(goodix_ts_init);
 module_exit(goodix_ts_exit);
-module_i2c_driver(goodix_ts_driver);
+// module_i2c_driver(goodix_ts_driver);
 MODULE_DESCRIPTION("GTP Series Driver");
 MODULE_LICENSE("GPL");
