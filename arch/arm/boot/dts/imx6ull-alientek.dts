@@ -203,9 +203,9 @@
 	pinctrl-0 = <&pinctrl_i2c2>;
 	status = "okay";
 
-	goodix_ts@14 {				//使用goodix的驱动，并且设置具体型号
+	goodix_ts@5d {				//使用goodix的驱动，并且设置具体型号
 		compatible = "goodix,gt9xx", "goodix,gt1151";
-		reg = <0x14>;
+		reg = <0x5d>;
 		interrupt-parent = <&gpio1>;
 		interrupts = <9 IRQ_TYPE_EDGE_BOTH>;
 		pinctrl-name = "default";
